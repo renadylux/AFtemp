@@ -1,0 +1,27 @@
+<ion-view>
+
+	<div ng-if="data.result" class="list card'>  #ng-if can be extracted the data
+	<div class="item item-body">
+	<img class="full-image" ng-src="{{data.result.poster}}" height=300 width=70>
+	<div class="row">
+	<div class="col col-5">
+	<h3>Movie Tile:</h3>
+	<p>{{data.result.title}}</p>
+	<div class="col col-5">
+	<h4>{{data.result.date}}</h4>
+	<p>20017</p>
+	</div>
+	</div>
+<div>
+  <button ng-click="addFavorite()" class="button button-balanced">Add to Favorites</button>
+</div>
+
+</ion-view>
+
+
+
+
+///
+
+in .controller("MainCtrl")
+

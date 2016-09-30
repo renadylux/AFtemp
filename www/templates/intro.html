@@ -1,0 +1,42 @@
+
+<ion-view title="Intro" id="intro">
+  <ion-content padding="true">
+
+  <div class="button-bar">
+    <a class="button button-clear button-positive no-animation" ng-click="startApp()" ng-show="!slideIndex">SkipIntro</a>
+    <a class="button button-clear button-positive no-animation" ng-click="previous()" ng-show="slideIndex > 0">Previous</a>
+    <a class="button button-clear button-positive no-animation" ng-click="next()" ng-show="slideIndex != 2">Next</a>
+    <a class="button button-clear button-positive no-animation" ng-click="startApp()" ng-show="slideIndex==2">StartAkaFantasy</a>
+  </div>
+  <div>
+    <ion-slide-box on-slide-changed="slideChanged(index)">
+        <ion-slide>
+         <h3>Aka Fantasy</h3>
+          <div id="0" class="box blue">
+            <img src="/img/cnDOuRRTOqsDG4TCKsZw_card20back.jpg" width="100%" height="auto" style="display: block; margin-left: auto; margin-right: auto;">
+          </div>
+          <p>Logo</p>
+        </ion-slide>
+        <ion-slide>
+        <h3>Begin the Journey</h3>
+          <div id="1" class="box yellow">
+             <h4>Just three steps:</h4>
+              <ol>
+                <li>1. Explore the game</li>
+                <li>2. Finish the Challenge</li>
+                <li>3. Collect your AKA card</li>
+              </ol>
+          </div>
+        </ion-slide>
+        <ion-slide>
+          <div id="2" class="box pink"></div>          
+              <h3>Other Features</h3>
+              <div id="0" class="box pink">
+                <img src="/img/social.jpg" width="100%" height="auto" style="display: block; margin-left: auto; margin-right: auto;">
+          </div>
+        </ion-slide>
+    </ion-slide-box>
+  </div>
+</ion-content>
+</ion-view>
+

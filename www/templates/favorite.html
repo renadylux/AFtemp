@@ -1,0 +1,29 @@
+<ion-view>
+<ion-content>
+   <ul class="list">
+   <li ng-repeat="item in favorites" class="item">
+      Item1
+   </li>
+
+   </ul>
+</ion-content>
+
+
+///
+
+app.js
+
+.controller("FavoritesCtrl",function($scope)){
+	$scope.favorites=["Batmae","Iron MAN"];
+})
+
+.$scope.addFavorate=function(){
+	var favoritesList=window.localStorage.getItem("favoritesList");
+	if(favoritesList==null){
+	    favoriteList=[];
+	}
+	favoritesList.push($scope.data.result.title);
+	window.localStorage.setItem("favoriteList", JSON.stringify(favoritesList));
+	consle.log("Favorite Moive is:"+$scope.data.result.title);
+
+})

@@ -1,0 +1,26 @@
+ion-slide{
+	background-color: #32db64;
+	heigth:100%;
+}
+ion-slide img{
+	height: 70vh !important;
+	width: auto !important;
+}
+
+.list {
+  width: 170px;
+  margin: 30px auto;
+  font-size: 20px;
+}
+.list ol {
+  margin-top: 30px;
+}
+.list ol li {
+  text-align: left;
+  list-style: decimal;
+  margin: 10px 0px;
+}
+
+.button.ng-hide{
+  display:none;
+}
